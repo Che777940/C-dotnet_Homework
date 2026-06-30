@@ -50,5 +50,7 @@
 
         Console.WriteLine("\n   РАНДОМНЫЕ ДЕЙСТВИЯ");
         Console.WriteLine("Текст например");
+
+        Console.WriteLine(12 + 12);
     }
 }
