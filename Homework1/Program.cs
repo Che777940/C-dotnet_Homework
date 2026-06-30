@@ -47,7 +47,5 @@
 
         Console.WriteLine($"Результат(площадь): {length * width * heightSquare}");
         Console.WriteLine($"Результат(периметр): {length + width + heightSquare}");
-
-        Console.WriteLine("Домашнее задание выполнено хорошо надеюсь");
     }
 }
