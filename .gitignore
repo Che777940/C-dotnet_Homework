@@ -1,0 +1,8 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Homework1/bin/Debug/net10.0
+/Homework1/obj
+/Homework1/.vs/Homework1.slnx/FileContentIndex
+/Homework1/.vs
