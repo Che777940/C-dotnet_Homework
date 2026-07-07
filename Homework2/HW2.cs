@@ -9,7 +9,7 @@ namespace Homework2
         {
             MainMenu();
         }
-
+        
         static void MainMenu()
         {
             Console.WriteLine("ДОБРО ПОЖАЛОВАТЬ В КАЛЬКУЛЯТОР");

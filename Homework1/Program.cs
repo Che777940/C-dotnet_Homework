@@ -1,53 +1,49 @@
-﻿internal class Program
+﻿using System.Xml.Serialization;
+
+namespace Homework.Task
 {
-    private static void Main(string[] args)
-    { 
-        // Второе задание
-        Console.WriteLine("   ЗАПОЛНЕНИЕ АНКЕТЫ");
-        Console.Write("Введите ваше имя: ");
-        string name = Console.ReadLine();
+    internal class Program
+    {
+        private static void Main(string[] args)
+        {
+            int choice = 0;
+            do
+            {
 
-        Console.Write("Введите ваш возраст: ");
-        int age = int.Parse(Console.ReadLine());
+                Console.WriteLine("ДОМАШНЕЕ ЗАДАНИЕ");
+                Console.WriteLine("1.Урок 1");
+                Console.WriteLine("2.Урок 2");
+                Console.WriteLine("3.Урок 3");
+                Console.WriteLine("4.Урок 4");
+                Console.WriteLine("0.Выход");
 
-        Console.Write("Введите ваш рост (в метрах, например 1.75): ");
-        double height = double.Parse(Console.ReadLine());
+                Console.Write("Выберите дз(1-4): ");
+                while (!int.TryParse(Console.ReadLine(), out choice))
+                {
+                    Console.Write("Ошибка, некорректный ввод, попробуйте ещё раз: ");
+                }
 
-        Console.WriteLine("\n   ВАША КАРТОЧКА");
-        Console.WriteLine($"Имя: {name}");
-        Console.WriteLine($"Возраст: {age}");
-        Console.WriteLine($"Рост: {height}");
-        Console.WriteLine($"Примерный год рождения: {2026 - age}");
-
-        // Третье задание
-        int addVar;
-        Console.WriteLine("\n   ЗАДАНИЕ С ДВУМЯ ПЕРЕМННЫМИ");
-        Console.Write("Введите число a: ");
-        int a = int.Parse(Console.ReadLine());
-        Console.Write("Введите число b: ");
-        int b = int.Parse(Console.ReadLine());
-        addVar = a;
-        a = b;
-        b = addVar;
-
-        Console.WriteLine("Обмен значенями");
-        Console.WriteLine($"Число a: {a}");
-        Console.WriteLine($"Число b: {b}");
-
-        // Четвёртое задание
-        Console.WriteLine("\n   КАЛЬКУЛЯТОР ПЛОЩАДИ");
-        Console.Write("Введите длину: ");
-        double length = double.Parse(Console.ReadLine());
-
-        Console.Write("Введите ширину: ");
-        double width = double.Parse(Console.ReadLine());
-
-        Console.Write("Введите высоту: ");
-        double heightSquare = double.Parse(Console.ReadLine());
-
-        Console.WriteLine($"Результат(площадь): {length * width * heightSquare}");
-        Console.WriteLine($"Результат(периметр): {length + width + heightSquare}");
-
-        Console.WriteLine("Результат работы");
+                switch (choice)
+                {
+                    case 1:
+                        HW1.Work1();
+                        break;
+                    case 2:
+                        Console.WriteLine("ГИТ");
+                        break;
+                    case 3:
+                        HW3.Work3();
+                        break;
+                    case 4:
+                        break;
+                    case 0:
+                        Console.WriteLine("До свидания");
+                        break;
+                    default:
+                        Console.WriteLine("Неверный выбор");
+                        break;
+                }
+            } while (choice != 0);
+        }
     }
 }
