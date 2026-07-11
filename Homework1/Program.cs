@@ -35,6 +35,7 @@ namespace Homework.Task
                         HW3.Work3();
                         break;
                     case 4:
+                        HW4.Work4();
                         break;
                     case 0:
                         Console.WriteLine("До свидания");
