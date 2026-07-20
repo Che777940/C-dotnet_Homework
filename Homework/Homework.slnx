@@ -1,4 +1,10 @@
 <Solution>
+  <Folder Name="/FinanceTracker/">
+    <Project Path="../FinanceTracker.Application/FinanceTracker.Application.csproj" Id="b5831991-6d56-4f8e-b312-fd01c4d77faf" />
+    <Project Path="../FinanceTracker.CLI/FinanceTracker.CLI.csproj" Id="66b310d3-78e5-40f6-9df2-d1c0defe7871" />
+    <Project Path="../FinanceTracker.Domain/FinanceTracker.Domain.csproj" Id="6919d7eb-7f1f-4556-8a39-e30a1b091023" />
+    <Project Path="../FinanceTracker.Infrastructure/FinanceTracker.Infrastructure.csproj" Id="b5d2d839-5c1b-4278-9119-6d788f3687a5" />
+  </Folder>
   <Project Path="../Practice/Practice.csproj" Id="aa65b64c-b40c-4313-aca6-ff1f841f6b93" />
   <Project Path="Homework.csproj" />
 </Solution>

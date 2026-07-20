@@ -1,4 +1,5 @@
 ﻿using System.Xml.Serialization;
+using FinanceTracker.CLI;
 
 namespace Homework.Task
 {
@@ -16,6 +17,7 @@ namespace Homework.Task
                 Console.WriteLine("3.Урок 3");
                 Console.WriteLine("4.Урок 4");
                 Console.WriteLine("5.Урок 5");
+                Console.WriteLine("5.Урок 6");
                 Console.WriteLine("0.Выход");
 
                 Console.Write("Выберите дз(1-4): ");
@@ -40,6 +42,9 @@ namespace Homework.Task
                         break;
                     case 5:
                         HW5.Work5();
+                        break;
+                    case 6:
+                        HW6.Work6();
                         break;
                     case 0:
                         Console.WriteLine("До свидания");
