@@ -11,5 +11,9 @@ namespace Homework.Practice2
             Console.WriteLine("Я учусь");
         }
 
+        public void ShowAge()
+        {
+            Console.WriteLine($"Мой возраст: {_age}");
+        }
     }
 }

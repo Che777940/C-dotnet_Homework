@@ -73,7 +73,6 @@ namespace Homework.Task
                         Teacher teacher = new Teacher();
                         teacher.Greet();
                         teacher.SetAge(42);
-                        teacher.ShowAge();
                         teacher.Explain();
 
                         break;

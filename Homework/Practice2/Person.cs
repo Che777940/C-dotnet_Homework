@@ -12,11 +12,6 @@ namespace Homework.Practice2
             Console.WriteLine("Привет");
         }
 
-        public void ShowAge()
-        {
-            Console.WriteLine($"Мой возраст: {_age}");
-        }
-
         public int SetAge(int age)
        {
           _age = age;
