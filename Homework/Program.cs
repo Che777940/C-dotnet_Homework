@@ -1,5 +1,6 @@
 ﻿using System.Xml.Serialization;
 using FinanceTracker.CLI;
+using Homework.Practice2;
 
 namespace Homework.Task
 {
@@ -60,6 +61,20 @@ namespace Homework.Task
                             years = years + 1;
                         }
                         debt.PrintBalance();
+
+                        Person person = new Person();
+                        person.Greet();
+
+                        Student gStudent = new Student();
+                        gStudent.Greet();
+                        gStudent.SetAge(16);
+                        gStudent.ShowAge();
+
+                        Teacher teacher = new Teacher();
+                        teacher.Greet();
+                        teacher.SetAge(42);
+                        teacher.ShowAge();
+                        teacher.Explain();
 
                         break;
                     case 0:
