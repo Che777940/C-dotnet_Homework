@@ -1,6 +1,7 @@
 ﻿using System.Xml.Serialization;
 using FinanceTracker.CLI;
 using Homework.Practice2;
+using Homework.Practice3;
 
 namespace Homework.Task
 {
@@ -74,6 +75,12 @@ namespace Homework.Task
                         teacher.Greet();
                         teacher.SetAge(42);
                         teacher.Explain();
+
+
+                        SportsCar sportCar = new SportsCar(0, 10);
+                        sportCar.Drive(120);
+                        sportCar.Refuel(20);
+                        sportCar.Drive(23);
 
                         break;
                     case 0:
