@@ -1,5 +1,7 @@
 ﻿using System.Xml.Serialization;
 using FinanceTracker.CLI;
+using Homework.Practice2;
+using Homework.Practice3;
 
 namespace Homework.Task
 {
@@ -17,7 +19,8 @@ namespace Homework.Task
                 Console.WriteLine("3.Урок 3");
                 Console.WriteLine("4.Урок 4");
                 Console.WriteLine("5.Урок 5");
-                Console.WriteLine("5.Урок 6");
+                Console.WriteLine("6.Урок 6");
+                Console.WriteLine("7.Практика");
                 Console.WriteLine("0.Выход");
 
                 Console.Write("Выберите дз(1-4): ");
@@ -45,6 +48,40 @@ namespace Homework.Task
                         break;
                     case 6:
                         HW6.Work6();
+                        break;
+                    case 7:
+                        Debt debt = new Debt(120000.0, 1.01);
+                        debt.PrintBalance();
+                        debt.WaitOneYear();
+                        debt.PrintBalance();
+
+                        int years = 0;
+                        while (years < 20)
+                        {
+                            debt.WaitOneYear();
+                            years = years + 1;
+                        }
+                        debt.PrintBalance();
+
+                        Person person = new Person();
+                        person.Greet();
+
+                        Student gStudent = new Student();
+                        gStudent.Greet();
+                        gStudent.SetAge(16);
+                        gStudent.ShowAge();
+
+                        Teacher teacher = new Teacher();
+                        teacher.Greet();
+                        teacher.SetAge(42);
+                        teacher.Explain();
+
+
+                        SportsCar sportCar = new SportsCar(0, 10);
+                        sportCar.Drive(120);
+                        sportCar.Refuel(20);
+                        sportCar.Drive(23);
+
                         break;
                     case 0:
                         Console.WriteLine("До свидания");
