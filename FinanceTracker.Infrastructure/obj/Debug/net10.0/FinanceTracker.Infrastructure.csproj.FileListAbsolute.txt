@@ -1,0 +1,16 @@
+D:\C#\Homework_git\C-dotnet_Homework\FinanceTracker.Infrastructure\bin\Debug\net10.0\FinanceTracker.Infrastructure.deps.json
+D:\C#\Homework_git\C-dotnet_Homework\FinanceTracker.Infrastructure\bin\Debug\net10.0\FinanceTracker.Infrastructure.dll
+D:\C#\Homework_git\C-dotnet_Homework\FinanceTracker.Infrastructure\bin\Debug\net10.0\FinanceTracker.Infrastructure.pdb
+D:\C#\Homework_git\C-dotnet_Homework\FinanceTracker.Infrastructure\bin\Debug\net10.0\FinanceTracker.Domain.dll
+D:\C#\Homework_git\C-dotnet_Homework\FinanceTracker.Infrastructure\bin\Debug\net10.0\FinanceTracker.Domain.pdb
+D:\C#\Homework_git\C-dotnet_Homework\FinanceTracker.Infrastructure\obj\Debug\net10.0\FinanceTracker.Infrastructure.csproj.AssemblyReference.cache
+D:\C#\Homework_git\C-dotnet_Homework\FinanceTracker.Infrastructure\obj\Debug\net10.0\FinanceTracker.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\Homework_git\C-dotnet_Homework\FinanceTracker.Infrastructure\obj\Debug\net10.0\FinanceTracker.Infrastructure.AssemblyInfoInputs.cache
+D:\C#\Homework_git\C-dotnet_Homework\FinanceTracker.Infrastructure\obj\Debug\net10.0\FinanceTracker.Infrastructure.AssemblyInfo.cs
+D:\C#\Homework_git\C-dotnet_Homework\FinanceTracker.Infrastructure\obj\Debug\net10.0\FinanceTracker.Infrastructure.csproj.CoreCompileInputs.cache
+D:\C#\Homework_git\C-dotnet_Homework\FinanceTracker.Infrastructure\obj\Debug\net10.0\FinanceTracker.Infrastructure.sourcelink.json
+D:\C#\Homework_git\C-dotnet_Homework\FinanceTracker.Infrastructure\obj\Debug\net10.0\FinanceT.DB2F2188.Up2Date
+D:\C#\Homework_git\C-dotnet_Homework\FinanceTracker.Infrastructure\obj\Debug\net10.0\FinanceTracker.Infrastructure.dll
+D:\C#\Homework_git\C-dotnet_Homework\FinanceTracker.Infrastructure\obj\Debug\net10.0\refint\FinanceTracker.Infrastructure.dll
+D:\C#\Homework_git\C-dotnet_Homework\FinanceTracker.Infrastructure\obj\Debug\net10.0\FinanceTracker.Infrastructure.pdb
+D:\C#\Homework_git\C-dotnet_Homework\FinanceTracker.Infrastructure\obj\Debug\net10.0\ref\FinanceTracker.Infrastructure.dll
