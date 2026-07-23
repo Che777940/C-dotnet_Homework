@@ -14,3 +14,14 @@
 /Homework/.vs
 /Homework/bin/Debug/net10.0
 /Homework/obj
+/FinanceTracker.Application/obj/Debug/net10.0/FinanceTracker.Application.AssemblyInfo.cs
+/FinanceTracker.Application/obj/Debug/net10.0/FinanceTracker.Application.AssemblyInfoInputs.cache
+/FinanceTracker.Application/obj/Debug/net10.0/FinanceTracker.Application.csproj.AssemblyReference.cache
+/FinanceTracker.CLI/obj/Debug/net10.0/FinanceTracker.CLI.AssemblyInfo.cs
+/FinanceTracker.CLI/obj/Debug/net10.0/FinanceTracker.CLI.AssemblyInfoInputs.cache
+/FinanceTracker.CLI/obj/Debug/net10.0/FinanceTracker.CLI.csproj.AssemblyReference.cache
+/FinanceTracker.Domain/obj/Debug/net10.0/FinanceTracker.Domain.AssemblyInfo.cs
+/FinanceTracker.Domain/obj/Debug/net10.0/FinanceTracker.Domain.AssemblyInfoInputs.cache
+/FinanceTracker.Infrastructure/obj/Debug/net10.0/FinanceTracker.Infrastructure.AssemblyInfo.cs
+/FinanceTracker.Infrastructure/obj/Debug/net10.0/FinanceTracker.Infrastructure.AssemblyInfoInputs.cache
+/FinanceTracker.Infrastructure/obj/Debug/net10.0/FinanceTracker.Infrastructure.csproj.AssemblyReference.cache
