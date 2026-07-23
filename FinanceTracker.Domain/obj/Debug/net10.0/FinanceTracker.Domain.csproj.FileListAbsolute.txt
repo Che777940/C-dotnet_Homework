@@ -1,0 +1,12 @@
+D:\C#\Homework_git\C-dotnet_Homework\FinanceTracker.Domain\bin\Debug\net10.0\FinanceTracker.Domain.deps.json
+D:\C#\Homework_git\C-dotnet_Homework\FinanceTracker.Domain\bin\Debug\net10.0\FinanceTracker.Domain.dll
+D:\C#\Homework_git\C-dotnet_Homework\FinanceTracker.Domain\bin\Debug\net10.0\FinanceTracker.Domain.pdb
+D:\C#\Homework_git\C-dotnet_Homework\FinanceTracker.Domain\obj\Debug\net10.0\FinanceTracker.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\Homework_git\C-dotnet_Homework\FinanceTracker.Domain\obj\Debug\net10.0\FinanceTracker.Domain.AssemblyInfoInputs.cache
+D:\C#\Homework_git\C-dotnet_Homework\FinanceTracker.Domain\obj\Debug\net10.0\FinanceTracker.Domain.AssemblyInfo.cs
+D:\C#\Homework_git\C-dotnet_Homework\FinanceTracker.Domain\obj\Debug\net10.0\FinanceTracker.Domain.csproj.CoreCompileInputs.cache
+D:\C#\Homework_git\C-dotnet_Homework\FinanceTracker.Domain\obj\Debug\net10.0\FinanceTracker.Domain.sourcelink.json
+D:\C#\Homework_git\C-dotnet_Homework\FinanceTracker.Domain\obj\Debug\net10.0\FinanceTracker.Domain.dll
+D:\C#\Homework_git\C-dotnet_Homework\FinanceTracker.Domain\obj\Debug\net10.0\refint\FinanceTracker.Domain.dll
+D:\C#\Homework_git\C-dotnet_Homework\FinanceTracker.Domain\obj\Debug\net10.0\FinanceTracker.Domain.pdb
+D:\C#\Homework_git\C-dotnet_Homework\FinanceTracker.Domain\obj\Debug\net10.0\ref\FinanceTracker.Domain.dll
