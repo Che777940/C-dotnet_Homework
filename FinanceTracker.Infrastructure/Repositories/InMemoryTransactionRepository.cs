@@ -1,12 +1,13 @@
 ﻿using FinanceTracker.Domain.Entities;
 using FinanceTracker.Domain.Enums;
+using FinanceTracker.Infrastructure.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace FinanceTracker.Infrastructure.Repositories
 {
-    public class InMemoryTransactionRepository
+    public class InMemoryTransactionRepository : IRepository
     {
         private readonly List<Transaction> _transactions = new()
         {
@@ -35,6 +36,11 @@ namespace FinanceTracker.Infrastructure.Repositories
         public List<Transaction> GetAll()
         {
             return _transactions;
+        }
+
+        public Guid GetById(Guid _id)
+        {
+            return _id;
         }
     }
 }

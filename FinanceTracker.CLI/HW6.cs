@@ -1,6 +1,5 @@
-﻿
+﻿using FinanceTracker.Application.Interfaces;
 using FinanceTracker.Application.Services;
-using FinanceTracker.Domain.Enums;
 
 namespace FinanceTracker.CLI
 {
@@ -8,7 +7,7 @@ namespace FinanceTracker.CLI
     {
         public static void Work6()
         {
-            FinanceService service = new FinanceService();
+            IFinanceService service = new FinanceService();
             int choice = 0;
 
             do

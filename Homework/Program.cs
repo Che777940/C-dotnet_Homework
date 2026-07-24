@@ -1,5 +1,7 @@
 ﻿using System.Xml.Serialization;
 using FinanceTracker.CLI;
+using Homework.Homework8_9;
+using Homework.Homework8_9interface;
 using Homework.Practice2;
 using Homework.Practice3;
 
@@ -21,9 +23,10 @@ namespace Homework.Task
                 Console.WriteLine("5.Урок 5");
                 Console.WriteLine("6.Урок 6");
                 Console.WriteLine("7.Практика");
+                Console.WriteLine("8.Дз 8-9");
                 Console.WriteLine("0.Выход");
 
-                Console.Write("Выберите дз(1-4): ");
+                Console.Write("Выберите дз(0-8): ");
                 while (!int.TryParse(Console.ReadLine(), out choice))
                 {
                     Console.Write("Ошибка, некорректный ввод, попробуйте ещё раз: ");
@@ -82,6 +85,20 @@ namespace Homework.Task
                         sportCar.Refuel(20);
                         sportCar.Drive(23);
 
+                        break;
+                    case 8:
+                        Animal dog = new Dog();
+                        Console.Write("Введите имя собаки: ");
+                        string name = Console.ReadLine();
+                        dog.SetName(name);
+                        dog.getName();
+                        dog.Eat();
+                        IAnimal dog1 = new Dog1();
+                        Console.Write("Введите имя собаки: ");
+                        name = Console.ReadLine();
+                        dog1.SetName(name);
+                        dog1.getName();
+                        dog1.Eat();
                         break;
                     case 0:
                         Console.WriteLine("До свидания");

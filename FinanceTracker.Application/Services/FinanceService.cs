@@ -1,10 +1,11 @@
-﻿using FinanceTracker.Domain.Entities;
+﻿using FinanceTracker.Application.Interfaces;
+using FinanceTracker.Domain.Entities;
 using FinanceTracker.Domain.Enums;
 using FinanceTracker.Infrastructure.Repositories;
 
 namespace FinanceTracker.Application.Services
 {
-    public class FinanceService
+    public class FinanceService : IFinanceService
     {
         private readonly InMemoryTransactionRepository _repository;
         public FinanceService()
