@@ -24,6 +24,7 @@ namespace Homework.Task
                 Console.WriteLine("6.Урок 6");
                 Console.WriteLine("7.Практика");
                 Console.WriteLine("8.Дз 8-9");
+                Console.WriteLine("9.Дз 10");
                 Console.WriteLine("0.Выход");
 
                 Console.Write("Выберите дз(0-8): ");
@@ -99,6 +100,9 @@ namespace Homework.Task
                         dog1.SetName(name);
                         dog1.getName();
                         dog1.Eat();
+                        break;
+                    case 9:
+                        HW10.Work10();
                         break;
                     case 0:
                         Console.WriteLine("До свидания");
