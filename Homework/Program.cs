@@ -83,6 +83,12 @@ namespace Homework.Task
                         sportCar.Drive(23);
 
                         break;
+                    case 8:
+                        int number = 5;
+                        Console.WriteLine(number);
+                        Experiment.ChangeValue(ref number);
+                        Console.WriteLine(number);
+                        break;
                     case 0:
                         Console.WriteLine("До свидания");
                         break;
