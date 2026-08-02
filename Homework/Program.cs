@@ -1,9 +1,10 @@
-﻿using System.Xml.Serialization;
-using FinanceTracker.CLI;
+﻿using FinanceTracker.CLI;
 using Homework.Homework8_9;
 using Homework.Homework8_9interface;
 using Homework.Practice2;
 using Homework.Practice3;
+using Homework.SmartHouse;
+using System.Xml.Serialization;
 
 namespace Homework.Task
 {
@@ -102,6 +103,16 @@ namespace Homework.Task
                         dog1.Eat();
                         break;
                     case 9:
+                        var hub = new SmartHomeHub();
+                        var lamp = new SmartLamp("Лампа", hub);
+                        var security = new SecuritySiren("Сирена", hub);
+                        var phone = new SmartphoneApp("Телефон", hub);
+                        hub.TriggerMotion();
+                        hub.TriggerFireAlarm();
+                        hub.TriggerDoor();
+                        hub.TriggerTemperature();
+                        hub.TriggerLowBattery();
+
                         HW10.Work10();
                         break;
                     case 0:
