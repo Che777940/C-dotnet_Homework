@@ -6,6 +6,8 @@ namespace Homework.Work11
 {
 
     public class ComparablePair<T, U> : IComparable<ComparablePair<T, U>>
+    where T : IComparable<T>
+    where U : IComparable<U>
     {
         public T CountPeople { get; }
         public U MainHuman { get; }
@@ -15,6 +17,10 @@ namespace Homework.Work11
             MainHuman = mainHuman;
         }
 
+        public override string ToString()
+        {
+            return $"{CountPeople}, {MainHuman}";
+        }
         public int CompareTo(ComparablePair<T, U> other)
         {
 

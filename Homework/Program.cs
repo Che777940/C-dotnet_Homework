@@ -125,9 +125,10 @@ namespace Homework.Task
 
                         var party = new List<ComparablePair<int, string>>
                         {
-                            new ComparablePair<int, string>(10, "Майкл"),
-                            new ComparablePair<int, string>(20, "Джон"),
-                            new ComparablePair<int, string>(30, "Клод"),
+                            new ComparablePair<int, string>(3, "a"),
+                            new ComparablePair<int, string>(3, "b"),
+                            new ComparablePair<int, string>(2, "c"),
+                            new ComparablePair<int, string>(3, "d"),
 
                         };
 
@@ -135,7 +136,7 @@ namespace Homework.Task
 
                         foreach (var p in party)
                         {
-                            Console.WriteLine(p.MainHuman);
+                            Console.WriteLine(p);
                         }
 
                         break;
