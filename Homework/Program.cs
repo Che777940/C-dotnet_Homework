@@ -4,6 +4,8 @@ using Homework.Homework8_9interface;
 using Homework.Practice2;
 using Homework.Practice3;
 using Homework.SmartHouse;
+using Homework.Work11;
+using System.Reflection.Metadata.Ecma335;
 using System.Xml.Serialization;
 
 namespace Homework.Task
@@ -26,6 +28,7 @@ namespace Homework.Task
                 Console.WriteLine("7.Практика");
                 Console.WriteLine("8.Дз 8-9");
                 Console.WriteLine("9.Дз 10");
+                Console.WriteLine("10.Дз 11");
                 Console.WriteLine("0.Выход");
 
                 Console.Write("Выберите дз(0-8): ");
@@ -112,8 +115,29 @@ namespace Homework.Task
                         hub.TriggerDoor();
                         hub.TriggerTemperature();
                         hub.TriggerLowBattery();
-
                         HW10.Work10();
+                        break;
+                    case 10:
+                        var pair = new Pair<int, int>(12, 22);
+                        var pair1 = new Pair<string, int>("тринадцать", 20);
+                        Console.WriteLine($"Результат pair:{pair.Third}");
+                        Console.WriteLine($"Результат pair1:{pair1.Second}");
+
+                        var party = new List<ComparablePair<int, string>>
+                        {
+                            new ComparablePair<int, string>(10, "Майкл"),
+                            new ComparablePair<int, string>(20, "Джон"),
+                            new ComparablePair<int, string>(30, "Клод"),
+
+                        };
+
+                        party.Sort();
+
+                        foreach (var p in party)
+                        {
+                            Console.WriteLine(p.MainHuman);
+                        }
+
                         break;
                     case 0:
                         Console.WriteLine("До свидания");
