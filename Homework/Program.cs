@@ -6,6 +6,7 @@ using Homework.Practice2;
 using Homework.Practice3;
 using Homework.SmartHouse;
 using Homework.Work11;
+using Homework.HW12;
 using System.Data;
 using System.Reflection.Metadata.Ecma335;
 using System.Xml.Serialization;
@@ -155,7 +156,14 @@ namespace Homework.Task
 
                         break;
                     case 11:
-                        
+                        Console.Write("Введите логин: ");
+                        string login = Console.ReadLine();
+                        Console.Write("Введите пароль: ");
+                        string password = Console.ReadLine();
+                        Console.Write("Подтвердите пароль: ");
+                        string confimPassword = Console.ReadLine();
+
+                        Data.MainData(login, password, confimPassword);
                         break;
                     case 0:
                         Console.WriteLine("До свидания");
