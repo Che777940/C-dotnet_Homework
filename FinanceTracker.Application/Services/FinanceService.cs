@@ -1,6 +1,7 @@
 ﻿using FinanceTracker.Application.Interfaces;
 using FinanceTracker.Domain.Entities;
 using FinanceTracker.Domain.Enums;
+using FinanceTracker.Domain.Exceptions;
 using FinanceTracker.Infrastructure.Repositories;
 
 namespace FinanceTracker.Application.Services
@@ -40,10 +41,26 @@ namespace FinanceTracker.Application.Services
                         break;
                 }
 
-
             Console.Write("Введите сумму: ");
             decimal amount = decimal.Parse(Console.ReadLine());
 
+            decimal balance = GetTotalIncome() - GetTotalExpense();
+            if (balance <= 0)
+            {
+                try
+                {
+                    throw new ExpensException(balance, amount);
+                }
+                catch (ExpensException ex)
+                {
+                    Console.WriteLine($"Валидация: {ex.Message}");
+                    return;
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Неизвестная ошибка: {ex.Message}");
+                }
+            }
 
             Console.Write("Введите категорию: ");
             string oneCategory = Console.ReadLine();

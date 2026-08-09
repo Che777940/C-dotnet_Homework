@@ -1,10 +1,12 @@
-﻿using FinanceTracker.CLI;
+﻿using FinanceTracker.Application.Services;
+using FinanceTracker.CLI;
 using Homework.Homework8_9;
 using Homework.Homework8_9interface;
 using Homework.Practice2;
 using Homework.Practice3;
 using Homework.SmartHouse;
 using Homework.Work11;
+using System.Data;
 using System.Reflection.Metadata.Ecma335;
 using System.Xml.Serialization;
 
@@ -24,7 +26,7 @@ namespace Homework.Task
                 Console.WriteLine("3.Урок 3");
                 Console.WriteLine("4.Урок 4");
                 Console.WriteLine("5.Урок 5");
-                Console.WriteLine("6.Урок 6");
+                Console.WriteLine("6.Урок 6 и Урок 12");
                 Console.WriteLine("7.Практика");
                 Console.WriteLine("8.Дз 8-9");
                 Console.WriteLine("9.Дз 10");
@@ -139,6 +141,21 @@ namespace Homework.Task
                             Console.WriteLine(p);
                         }
 
+                        var list = new MyList<int>();
+                        list.Add(2);
+                        list.Add(3);
+                        list.Add(1);
+                        list.Add(9);
+                        list.Add(10);
+
+                        foreach (var ls in list)
+                        {
+                            Console.WriteLine(ls);
+                        }
+
+                        break;
+                    case 11:
+                        
                         break;
                     case 0:
                         Console.WriteLine("До свидания");
