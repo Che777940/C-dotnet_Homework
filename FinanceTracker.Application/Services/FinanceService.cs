@@ -3,15 +3,18 @@ using FinanceTracker.Domain.Entities;
 using FinanceTracker.Domain.Enums;
 using FinanceTracker.Domain.Exceptions;
 using FinanceTracker.Infrastructure.Repositories;
+using System.ComponentModel;
 
 namespace FinanceTracker.Application.Services
 {
     public class FinanceService : IFinanceService
     {
         private readonly InMemoryTransactionRepository _repository;
+        private readonly InFileTransactionRepository _file;
         public FinanceService()
         {
            _repository = new InMemoryTransactionRepository();
+           _file = new InFileTransactionRepository();
         }
         public void AddTransaction()
         {
@@ -123,6 +126,15 @@ namespace FinanceTracker.Application.Services
             }
 
          
+        }
+
+        public void AddInFile()
+        {
+            var transactions = _repository.GetAll();
+            for (int i = 0; i < transactions.Count; i++)
+            {
+                _file.FileWriteRepository(transactions[i]);
+            }
         }
     }
 }

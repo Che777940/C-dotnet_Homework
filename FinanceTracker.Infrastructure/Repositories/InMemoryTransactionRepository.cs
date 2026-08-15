@@ -4,6 +4,7 @@ using FinanceTracker.Infrastructure.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Text.Json;
 
 namespace FinanceTracker.Infrastructure.Repositories
 {
@@ -42,5 +43,6 @@ namespace FinanceTracker.Infrastructure.Repositories
         {
             return _id;
         }
+
     }
 }

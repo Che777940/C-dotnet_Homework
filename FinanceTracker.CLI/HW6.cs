@@ -17,9 +17,10 @@ namespace FinanceTracker.CLI
                 Console.WriteLine("1.Просмотр баланса");
                 Console.WriteLine("2.Добавить транзакцию");
                 Console.WriteLine("3.Получить все транзакции");
+                Console.WriteLine("4.Сохранить в файл");
                 Console.WriteLine("0.Выход");
 
-                Console.Write("Выберите дз(0-3): ");
+                Console.Write("Выберите дз(0-4): ");
                 while (!int.TryParse(Console.ReadLine(), out choice))
                 {
                     Console.Write("Ошибка, некорректный ввод, попробуйте ещё раз: ");
@@ -37,6 +38,9 @@ namespace FinanceTracker.CLI
                         break;
                     case 3:
                         service.GetAllTransaction();
+                        break;
+                    case 4:
+                        service.AddInFile();
                         break;
                     case 0:
                         Console.WriteLine("До свидания");
