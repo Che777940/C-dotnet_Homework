@@ -73,3 +73,17 @@
 /FinanceTracker.Infrastructure/obj/Debug/net10.0/FinanceTracker.Infrastructure.sourcelink.json
 /FinanceTracker.Infrastructure/obj/Debug/net10.0/ref/FinanceTracker.Infrastructure.dll
 /FinanceTracker.Infrastructure/obj/Debug/net10.0/refint/FinanceTracker.Infrastructure.dll
+/FinanceTracker.Application/obj/Debug/net10.0/FinanceTracker.Application.assets.cache
+/FinanceTracker.Application/obj/FinanceTracker.Application.csproj.nuget.dgspec.json
+/FinanceTracker.Application/obj/project.assets.json
+/FinanceTracker.Application/obj/project.nuget.cache
+/FinanceTracker.Application/Services/FinanceService.cs
+/FinanceTracker.Domain/obj/Debug/net10.0/FinanceTracker.Domain.assets.cache
+/FinanceTracker.Domain/obj/Debug/net10.0/FinanceTracker.Domain.csproj.CoreCompileInputs.cache
+/FinanceTracker.Domain/obj/FinanceTracker.Domain.csproj.nuget.dgspec.json
+/FinanceTracker.Domain/obj/project.assets.json
+/FinanceTracker.Domain/obj/project.nuget.cache
+/FinanceTracker.Infrastructure/obj/Debug/net10.0/FinanceTracker.Infrastructure.assets.cache
+/FinanceTracker.Infrastructure/obj/FinanceTracker.Infrastructure.csproj.nuget.dgspec.json
+/FinanceTracker.Infrastructure/obj/project.assets.json
+/FinanceTracker.Infrastructure/obj/project.nuget.cache
