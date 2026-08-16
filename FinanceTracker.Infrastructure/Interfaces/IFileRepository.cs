@@ -7,8 +7,8 @@ namespace FinanceTracker.Infrastructure.Interfaces
 {
     public interface IFileRepository
     {
-        public void FileWriteRepository(Transaction transaction);
+        public void FileWriteRepository(List<Transaction> transactions);
 
-        public void FileReadRepository();
+        public void FileReadRepository(string pathFile, List<Transaction> transactions);
     }
 }

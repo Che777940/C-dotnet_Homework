@@ -15,5 +15,7 @@ namespace FinanceTracker.Application.Interfaces
         void GetAllTransaction();
 
         void AddInFile();
+
+        public void ReadOnFile();
     }
 }

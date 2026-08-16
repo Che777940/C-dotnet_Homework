@@ -1,12 +1,13 @@
 ﻿using FinanceTracker.Application.Services;
 using FinanceTracker.CLI;
+using Homework.Homework13;
 using Homework.Homework8_9;
 using Homework.Homework8_9interface;
+using Homework.HW12;
 using Homework.Practice2;
 using Homework.Practice3;
 using Homework.SmartHouse;
 using Homework.Work11;
-using Homework.HW12;
 using System.Data;
 using System.Reflection.Metadata.Ecma335;
 using System.Xml.Serialization;
@@ -27,14 +28,16 @@ namespace Homework.Task
                 Console.WriteLine("3.Урок 3");
                 Console.WriteLine("4.Урок 4");
                 Console.WriteLine("5.Урок 5");
-                Console.WriteLine("6.Урок 6 и Урок 12");
+                Console.WriteLine("6.Урок 6 и Урок 12 и Урок 13");
                 Console.WriteLine("7.Практика");
                 Console.WriteLine("8.Дз 8-9");
                 Console.WriteLine("9.Дз 10");
                 Console.WriteLine("10.Дз 11");
+                Console.WriteLine("Работа с исключениями");
+                Console.WriteLine("12.Как дополнение к Уроку 13");
                 Console.WriteLine("0.Выход");
 
-                Console.Write("Выберите дз(0-8): ");
+                Console.Write("Выберите дз(0-11): ");
                 while (!int.TryParse(Console.ReadLine(), out choice))
                 {
                     Console.Write("Ошибка, некорректный ввод, попробуйте ещё раз: ");
@@ -164,6 +167,12 @@ namespace Homework.Task
                         string confimPassword = Console.ReadLine();
 
                         Data.MainData(login, password, confimPassword);
+                        break;
+                    case 12:
+                        string folderPath = @"D:\C#\Homework_git\C-dotnet_Homework\Files";
+                        var service = new JsonToXmlService();
+                        bool success = service.Process(folderPath);
+                        Console.WriteLine(success ? "Конвертация выполнена." : "Ошибка конвертации.");
                         break;
                     case 0:
                         Console.WriteLine("До свидания");
