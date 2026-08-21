@@ -17,5 +17,8 @@ namespace FinanceTracker.Application.Interfaces
         void AddInFile();
 
         public void ReadOnFile();
+
+        Task ConvertToUsdAsync();
+        Task ConvertToEurAsync();
     }
 }

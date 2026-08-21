@@ -17,7 +17,7 @@ namespace FinanceTracker.Domain.Entities
 
         public override string ToString()
         {
-            return $"Сумма: {_amount}\nТип: {(_type == TransactionType.Income ? "Доход" : "Расход")}\nКатегории: {string.Join(", ", _category)}\nОписание: {_description}";
+            return $"\nСумма: {_amount}\nТип: {(_type == TransactionType.Income ? "Доход" : "Расход")}\nКатегории: {string.Join(", ", _category)}\nОписание: {_description}\n";
         }
     }
 }

@@ -19,7 +19,8 @@ namespace FinanceTracker.CLI
                 Console.WriteLine("3.Получить все транзакции");
                 Console.WriteLine("4.Сохранить в файл");
                 Console.WriteLine("5.Считать с файла");
-                Console.WriteLine("6.Конвертировать валюты");
+                Console.WriteLine("6.Конвертировать валюту в доллары");
+                Console.WriteLine("7.Конвертировать валюту в евро");
                 Console.WriteLine("0.Выход");
 
                 Console.Write("Выберите дз(0-4): ");
@@ -46,6 +47,12 @@ namespace FinanceTracker.CLI
                         break;
                     case 5:
                         service.ReadOnFile();
+                        break;
+                    case 6:
+                        service.ConvertToUsdAsync();
+                        break;
+                    case 7:
+                        service.ConvertToEurAsync();
                         break;
                     case 0:
                         Console.WriteLine("До свидания");
