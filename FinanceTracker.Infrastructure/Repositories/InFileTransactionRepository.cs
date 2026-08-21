@@ -13,11 +13,12 @@ namespace FinanceTracker.Infrastructure.Repositories
 {
     public class InFileTransactionRepository : IFileRepository
     {
+
         public void FileWriteRepository(List<Transaction> transactions)
         {
             var options = new JsonSerializerOptions
             {
-                WriteIndented = false,
+                WriteIndented = true,
                 DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,
                 Encoder = JavaScriptEncoder.Create(UnicodeRanges.All)
             };
@@ -28,9 +29,26 @@ namespace FinanceTracker.Infrastructure.Repositories
 
         public void FileReadRepository(string pathFile, List<Transaction> transactions)
         {
+            if (!File.Exists(pathFile))
+            {
+                return;
+            }
+
             string data = File.ReadAllText(pathFile);
-            List<Transaction> transaction = JsonSerializer.Deserialize<List<Transaction>>(data);
-            transactions.AddRange(transaction);
+            List<Transaction> transaction = JsonSerializer.Deserialize<List<Transaction>>(data) ?? new List<Transaction>();
+            foreach (var loaded in transaction)
+            {
+                bool alreadyExists = transactions.Any(t =>
+                    t._amount == loaded._amount &&
+                    t._type == loaded._type &&
+                    t._description == loaded._description &&
+                    t._category.SequenceEqual(loaded._category));
+
+                if (!alreadyExists)
+                {
+                    transactions.Add(loaded);
+                }
+            }
         }
     }
 }

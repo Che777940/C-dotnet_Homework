@@ -19,6 +19,7 @@ namespace FinanceTracker.CLI
                 Console.WriteLine("3.Получить все транзакции");
                 Console.WriteLine("4.Сохранить в файл");
                 Console.WriteLine("5.Считать с файла");
+                Console.WriteLine("6.Конвертировать валюты");
                 Console.WriteLine("0.Выход");
 
                 Console.Write("Выберите дз(0-4): ");

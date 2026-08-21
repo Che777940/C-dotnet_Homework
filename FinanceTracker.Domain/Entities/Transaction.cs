@@ -8,7 +8,6 @@ namespace FinanceTracker.Domain.Entities
 {
     public class Transaction
     {
-        [JsonIgnore]
         public Guid _id { get; set; } = Guid.NewGuid();
         public decimal _amount { get;  set; }
         public TransactionType _type { get; set; }
