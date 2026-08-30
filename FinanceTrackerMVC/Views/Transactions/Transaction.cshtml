@@ -1,0 +1,9 @@
+﻿@model List<FinanceTracker.Domain.Entities.Transaction>
+﻿@{
+ViewData["Title"] = "Страница продуктов";
+}
+
+@foreach (var transaction in Model)
+{
+    <p>@transaction</p>
+}

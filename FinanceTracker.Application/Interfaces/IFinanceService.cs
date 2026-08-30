@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using FinanceTracker.Domain.Entities;
 
 namespace FinanceTracker.Application.Interfaces
 {
@@ -20,5 +21,7 @@ namespace FinanceTracker.Application.Interfaces
 
         Task ConvertToUsdAsync();
         Task ConvertToEurAsync();
+
+        public List<Transaction> GetAllTransactionWeb();
     }
 }
