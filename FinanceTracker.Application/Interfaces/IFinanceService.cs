@@ -23,5 +23,7 @@ namespace FinanceTracker.Application.Interfaces
         Task ConvertToEurAsync();
 
         public List<Transaction> GetAllTransactionWeb();
+
+        public void AddTransactionWeb(Transaction transaction);
     }
 }
