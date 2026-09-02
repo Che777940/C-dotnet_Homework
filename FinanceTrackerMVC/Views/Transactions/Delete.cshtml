@@ -1,5 +1,45 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model FinanceTracker.Domain.Entities.Transaction
+
 @{
+    ViewData["Title"] = "Удаление транзакции";
 }
+
+<h2>Удаление транзакции</h2>
+
+<p>Вы действительно хотите удалить эту транзакцию?</p>
+
+<table class="table">
+    <tr>
+        <th>Тип</th>
+        <td>@Model._type</td>
+    </tr>
+
+    <tr>
+        <th>Сумма</th>
+        <td>@Model._amount</td>
+    </tr>
+
+    <tr>
+        <th>Категория</th>
+        <td>@string.Join(", ", Model._category)</td>
+    </tr>
+
+    <tr>
+        <th>Описание</th>
+        <td>@Model._description</td>
+    </tr>
+</table>
+
+<form asp-action="DeleteConfirmed" method="post">
+
+    <input type="hidden" name="id" value="@Model._id" />
+
+    <button type="submit" class="btn btn-danger">
+        Удалить
+    </button>
+
+    <a asp-action="Index" class="btn btn-secondary">
+        Отмена
+    </a>
+
+</form>

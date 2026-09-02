@@ -25,5 +25,7 @@ namespace FinanceTracker.Application.Interfaces
         public List<Transaction> GetAllTransactionWeb();
 
         public void AddTransactionWeb(Transaction transaction);
+
+        public void DeleteTransaction(Guid id);
     }
 }

@@ -9,12 +9,16 @@ namespace FinanceTrackerMVC.Controllers
 {
     public class TransactionsController : Controller
     {
+
+        private readonly IFinanceService _service;
+
+        public TransactionsController(IFinanceService service)
+        {
+            _service = service;
+        }
         public IActionResult Transaction()
         {
-            IFinanceService service = new FinanceService();
-            service.ReadOnFile();
-
-            var transactions = service.GetAllTransactionWeb();
+            var transactions = _service.GetAllTransactionWeb();
             return View(transactions);
         }
 
@@ -28,20 +32,19 @@ namespace FinanceTrackerMVC.Controllers
         public IActionResult Create(Transaction transaction)
         {
 
-            IFinanceService service = new FinanceService();
-            Console.WriteLine(transaction._amount);
-            Console.WriteLine(transaction._type);
-            Console.WriteLine(transaction._category);
-            Console.WriteLine(transaction._description);
-            Console.WriteLine(transaction._date);
+            _service.AddTransactionWeb(transaction);
 
-            service.AddTransactionWeb(transaction);
             return RedirectToAction("Transaction");
         }
 
-        public IActionResult Delete()
+        [HttpPost]
+        public IActionResult Delete(Guid id)
         {
-            return View();
+            _service.DeleteTransaction(id);
+
+            return RedirectToAction("Transaction");
         }
+
+
     }
 }

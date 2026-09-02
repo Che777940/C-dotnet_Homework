@@ -1,3 +1,8 @@
+using FinanceTracker.Application.Interfaces;
+using FinanceTracker.Application.Services;
+using FinanceTracker.Infrastructure.Interfaces;
+using FinanceTracker.Infrastructure.Repositories;
+
 namespace FinanceTrackerMVC
 {
     public class Program
@@ -8,6 +13,8 @@ namespace FinanceTrackerMVC
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            builder.Services.AddScoped<IFinanceService, FinanceService>();
+            builder.Services.AddScoped<IRepository, InMemoryTransactionRepository>();
 
             var app = builder.Build();
 
