@@ -38,6 +38,12 @@
                 <td>@transaction._date</td>
 
                 <td>
+                    <a asp-action="Edit"
+                       asp-route-id="@transaction._id"
+                       class="btn btn-warning">
+                        Редактировать
+                    </a>
+
                     <form asp-action="Delete" method="post">
                         <input type="hidden"
                                name="id"

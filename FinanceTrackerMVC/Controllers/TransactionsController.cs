@@ -45,6 +45,27 @@ namespace FinanceTrackerMVC.Controllers
             return RedirectToAction("Transaction");
         }
 
+        [HttpGet]
+        public IActionResult Edit(Guid id)
+        {
+            var transactions = _service.GetAllTransactionWeb();
 
+            var transaction = transactions.FirstOrDefault(x => x._id == id);
+
+            if (transaction == null)
+            {
+                return NotFound();
+            }
+
+            return View(transaction);
+        }
+
+        [HttpPost]
+        public IActionResult Edit(Transaction transaction)
+        {
+            _service.EditTransaction(transaction);
+
+            return RedirectToAction("Transaction");
+        }
     }
 }
