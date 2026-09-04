@@ -1,7 +1,16 @@
-﻿using System.Xml.Serialization;
+﻿using FinanceTracker.Application.Services;
 using FinanceTracker.CLI;
+using Homework.Homework13;
+using Homework.Homework8_9;
+using Homework.Homework8_9interface;
+using Homework.HW12;
 using Homework.Practice2;
 using Homework.Practice3;
+using Homework.SmartHouse;
+using Homework.Work11;
+using System.Data;
+using System.Reflection.Metadata.Ecma335;
+using System.Xml.Serialization;
 
 namespace Homework.Task
 {
@@ -19,11 +28,16 @@ namespace Homework.Task
                 Console.WriteLine("3.Урок 3");
                 Console.WriteLine("4.Урок 4");
                 Console.WriteLine("5.Урок 5");
-                Console.WriteLine("6.Урок 6");
+                Console.WriteLine("6.Урок 6 и Урок 12 и Урок 13");
                 Console.WriteLine("7.Практика");
+                Console.WriteLine("8.Дз 8-9");
+                Console.WriteLine("9.Дз 10");
+                Console.WriteLine("10.Дз 11");
+                Console.WriteLine("Работа с исключениями");
+                Console.WriteLine("12.Как дополнение к Уроку 13");
                 Console.WriteLine("0.Выход");
 
-                Console.Write("Выберите дз(1-4): ");
+                Console.Write("Выберите дз(0-11): ");
                 while (!int.TryParse(Console.ReadLine(), out choice))
                 {
                     Console.Write("Ошибка, некорректный ввод, попробуйте ещё раз: ");
@@ -82,6 +96,83 @@ namespace Homework.Task
                         sportCar.Refuel(20);
                         sportCar.Drive(23);
 
+                        break;
+                    case 8:
+                        Animal dog = new Dog();
+                        Console.Write("Введите имя собаки: ");
+                        string name = Console.ReadLine();
+                        dog.SetName(name);
+                        dog.getName();
+                        dog.Eat();
+                        IAnimal dog1 = new Dog1();
+                        Console.Write("Введите имя собаки: ");
+                        name = Console.ReadLine();
+                        dog1.SetName(name);
+                        dog1.getName();
+                        dog1.Eat();
+                        break;
+                    case 9:
+                        var hub = new SmartHomeHub();
+                        var lamp = new SmartLamp("Лампа", hub);
+                        var security = new SecuritySiren("Сирена", hub);
+                        var phone = new SmartphoneApp("Телефон", hub);
+                        hub.TriggerMotion();
+                        hub.TriggerFireAlarm();
+                        hub.TriggerDoor();
+                        hub.TriggerTemperature();
+                        hub.TriggerLowBattery();
+                        HW10.Work10();
+                        break;
+                    case 10:
+                        var pair = new Pair<int, int>(12, 22);
+                        var pair1 = new Pair<string, int>("тринадцать", 20);
+                        Console.WriteLine($"Результат pair:{pair.Third}");
+                        Console.WriteLine($"Результат pair1:{pair1.Second}");
+
+                        var party = new List<ComparablePair<int, string>>
+                        {
+                            new ComparablePair<int, string>(3, "a"),
+                            new ComparablePair<int, string>(3, "b"),
+                            new ComparablePair<int, string>(2, "c"),
+                            new ComparablePair<int, string>(3, "d"),
+
+                        };
+
+                        party.Sort();
+
+                        foreach (var p in party)
+                        {
+                            Console.WriteLine(p);
+                        }
+
+                        var list = new MyList<int>();
+                        list.Add(2);
+                        list.Add(3);
+                        list.Add(1);
+                        list.Add(9);
+                        list.Add(10);
+
+                        foreach (var ls in list)
+                        {
+                            Console.WriteLine(ls);
+                        }
+
+                        break;
+                    case 11:
+                        Console.Write("Введите логин: ");
+                        string login = Console.ReadLine();
+                        Console.Write("Введите пароль: ");
+                        string password = Console.ReadLine();
+                        Console.Write("Подтвердите пароль: ");
+                        string confimPassword = Console.ReadLine();
+
+                        Data.MainData(login, password, confimPassword);
+                        break;
+                    case 12:
+                        string folderPath = @"D:\C#\Homework_git\C-dotnet_Homework\Files";
+                        var service = new JsonToXmlService();
+                        bool success = service.Process(folderPath);
+                        Console.WriteLine(success ? "Конвертация выполнена." : "Ошибка конвертации.");
                         break;
                     case 0:
                         Console.WriteLine("До свидания");
